@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ToastEspExample</string>
+    <string name="turn_on">TURN ON</string>
 </resources>
