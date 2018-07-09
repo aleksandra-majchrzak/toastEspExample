@@ -14,3 +14,11 @@ Aby móc programować w Arduino IDE musimy zainstalować odpowiedni Manager Pły
 # Wgrywanie programu na moduł
 Aby wgrać program na moduł ESP musimy skorzystać z konwertera USB-UART. Schemat podpięcia zasilania, modułu ESP i przedstawiony został poniżej.
 
+![](https://github.com/aleksandra-majchrzak/toastEspExample/blob/master/toast0_bb.png)
+
+Konwerter oczywiście musi być podłączony do komputera. Z poziomu Arduino IDE Narzędzia->Port musimy wybrać odpowiedni port do którego podłączony został konwerter (zwykle to jedyna opcja na liście), a następnie normalnie wgrać projekt na moduł.
+
+# Uruchamianie programu
+W celu uruchomienia programu należy usunąć kilka kabli z ESP oraz dodać elementy do diody/paska LED zgodnie z poniższym schematem.
+
+![](https://github.com/aleksandra-majchrzak/toastEspExample/blob/master/toast1_bb.png)
