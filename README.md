@@ -1,5 +1,5 @@
 # toastEspExample
-Project for Android and ESP8266 - light module based on ESP8266 12E connecting with mobile app via WiFi.
+Projekt aplikacji na Androida i ESP8266 - moduł świetlny oparty o ESP8266 12E komunikujący się z aplikacją mobilną przez WiFi.
 
 Kod do wgrania z moduł ESP znajduje się w folderze `esp8266`. Plik `esp8266.ino` to wersja z paskiem ledowym, `esp8266_led` to wersja z diodą RGB.
 
