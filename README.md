@@ -31,6 +31,10 @@ W celu uruchomienia programu należy usunąć kilka kabli z ESP oraz dodać elem
 
 ![](https://github.com/aleksandra-majchrzak/toastEspExample/blob/master/toast2_bb.png)
 
+Poniżej zdjęcie zmontowanego ukłdu z diodą RGB.
+![](https://github.com/aleksandra-majchrzak/toastEspExample/blob/master/IMG_1810.png)
+
+
 W kodzie modułu większość istotnych kominikatów (takich jak uzyskany adres IP) wypisywane są za pomocą konwertera USB-UART do Monitora szeregowego Arduino IDE. Aby otworzyć Monikor szeregowy wybierz Narzędzia->Monitor portu szeregowego.
 
 # Uwagi
