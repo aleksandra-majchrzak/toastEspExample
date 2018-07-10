@@ -18,9 +18,20 @@ Aby wgrać program na moduł ESP musimy skorzystać z konwertera USB-UART. Schem
 
 Konwerter oczywiście musi być podłączony do komputera. Z poziomu Arduino IDE Narzędzia->Port musimy wybrać odpowiedni port do którego podłączony został konwerter (zwykle to jedyna opcja na liście), a następnie normalnie wgrać projekt na moduł.
 
+Po prawidłowym wgraniu programu na dole Arduio IDE powinniśmy zobaczyć wyjście podobne do tego na screenie poniżej.
+
+![](https://github.com/aleksandra-majchrzak/toastEspExample/blob/master/loading.png)
+
+Jeśli w tym momencie na ekranie zamiast informacji o załadowaniu pliku widzisz informacje o błędach, sprawdż czy poprawnie podłączyłeś wszystkie kable oraz czy dostaczyłeś do układu odpowiednie zasilanie. Żle dobrane zasilanie to najczęstsza przyczyna błędów we wgrywaniu i działaniu programu. Więcej informacji o potencjalnych problemach znajdziesz w <a href="https://arduino-esp8266.readthedocs.io/en/latest/faq/readme.html">oficjalnej dokumentacji biblioteki</a>
+
 # Uruchamianie programu
 W celu uruchomienia programu należy usunąć kilka kabli z ESP oraz dodać elementy do diody/paska LED zgodnie z poniższym schematem.
 
 ![](https://github.com/aleksandra-majchrzak/toastEspExample/blob/master/toast1_bb.png)
 
 ![](https://github.com/aleksandra-majchrzak/toastEspExample/blob/master/toast2_bb.png)
+
+W kodzie modułu większość istotnych kominikatów (takich jak uzyskany adres IP) wypisywane są za pomocą konwertera USB-UART do Monitora szeregowego Arduino IDE. Aby otworzyć Monikor szeregowy wybierz Narzędzia->Monitor portu szeregowego.
+
+# Uwagi
+Pamiętaj, że do poprawnej komunikacji aplikacji z modułem oba urządzenia powinny być podłączone do tej samej sieci WiFi. A co za tym idzie, w kodzie modułu musisz wpisać nazwę i hasło sieci, do której ma się on podłączyć, a w aplikacji mobilnej musisz wpisać adres IP modułu, który uzyskasz gdy połączy się on już do sieci.
